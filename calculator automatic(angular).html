@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<title>calculator</title>
+	<style>
+	
+		table{
+			margin-left: 100px;
+			margin-top: 50px;
+		
+			padding: 10px;
+			
+		}
+		tr td{
+			margin-top: 10px;
+			padding: 10px;
+		}
+		#h{
+			color:red;
+			margin-bottom: 15px;
+		}
+		
+	</style>
+	
+	
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	</head>
+
+<body ng-app=""  >
+	 <table >
+	<tr>
+		 <td><h1 id="h">Calculator</h1>   </td>
+		 </tr>
+	<tr >
+		<td>Number 1:</td> 
+		 <td> <input type="number" style="font:bold; font" ng-model="num1"></td>
+		 </tr>
+	<tr >
+		<td>Number 2:</td>
+		<td> <input type="number" ng-model="num2"></td>
+		 </tr>
+	
+		 <tr >
+		 <td> + :</td>
+		 
+		 <td style="color:blue;"> {{num1 -- num2}} </td>
+		 
+		 </tr>
+	
+		 <tr >
+		 <td> - :</td>
+			
+			 <td style="color:blue;"> {{num1 - num2}} </td>
+		 
+		 </tr>
+		 
+		 <tr >
+		 <td> * :</td>
+		 
+		 <td style="color:blue;"> {{num1 * num2}} </td>
+			 
+		 </tr>
+		 
+		 <tr >
+		  <td> / :</td>
+			 
+			 
+			<td style="color:blue;"> {{num1 / num2}} </td>
+		 
+		 </tr>
+		 
+		 <tr >
+         <td>% :</td>
+			 
+		 <td style="color:blue;"> {{num1 % num2}} </td>
+			 
+		 </tr>
+	
+	</table>
+	
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</html>
